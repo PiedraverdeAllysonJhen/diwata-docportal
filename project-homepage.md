@@ -18,7 +18,7 @@
 ### 🗺 Site Map
 
 * 🏠 [Project Homepage](#)
-* 🔐 [Account Creation (FR1.0)](#)
+* 🔐 [Account Creation (FR1.0)](docs/authentication-sign-up.md)
 * 📖 [Book Reservation (FR2.0)](#)
 * 🔔 [Reservation Notifier (FR2.1)](#)
 * 🔍 [Book Search (FR3.0)](#)
