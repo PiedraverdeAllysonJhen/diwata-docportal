@@ -23,6 +23,7 @@
                     <li style="padding-left: 15px"><a href="availability.md">Real-Time Availability (FR 4.0)</a></li>
                     <li style="padding-left: 15px"><a href="borrowing-history.md">Borrowing History (FR 5.0)</a></li>
                     <li style="padding-left: 15px"><a href="book-categories.md">Book Categories (FR 6.0)</a></li>
+                    <li style="padding-left: 15px"><a href="account-settings.md">Account Settings (FR 1.0)</a></li>
                 </ul>
                 <p><strong>3. Librarian Management Portal</strong></p>
                 <ul style="list-style-type: none; padding-left: 0; font-size: 0.9em;">
@@ -34,7 +35,6 @@
                 </ul>
                 <p><strong>4. Shared</strong></p>
                 <ul style="list-style-type: none; padding-left: 0; font-size: 0.9em;">
-                    <li style="padding-left: 15px"><a href="../shared/account-settings.md">Account Settings (FR 1.0)</a></li>
                     <li style="padding-left: 15px"><a href="../shared/book-detail.md">Book Detail (FR 3.0 / 4.0)</a></li>
                     <li style="padding-left: 15px"><a href="../shared/notification-center.md">Notification Center (FR 2.1 / 8.0)</a></li>
                 </ul>
@@ -81,7 +81,7 @@
         <tr>
             <td colspan="2" align="center" style="padding-top: 30px; font-size: 0.8em; color: #999;">
                 <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 10px;">
-                © 2026 DigitalWare | OnTrack VSU SSC
+               © 2026 Enera  | BookItStudent
             </d>
         </tr>
     </table>

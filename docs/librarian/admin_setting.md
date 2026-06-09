@@ -32,53 +32,72 @@
                     <li style="padding-left: 15px"><a href="process-return.md">Process Return (FR 7.0)</a></li>
                     <li style="padding-left: 15px"><a href="book-record-manager.md">Book Record Manager (FR 7.0)</a></li>
                     <li style="padding-left: 15px"><a href="overdue-notifier.md">Overdue Notifier (FR 8.0)</a></li>
+                    <li style="padding-left: 15px"><a href="admin-settings.md">Admin Settings</a></li>
                 </ul>
                 <p><strong>4. Shared</strong></p>
                 <ul style="list-style-type: none; padding-left: 0; font-size: 0.9em;">
                     <li style="padding-left: 15px"><a href="../shared/book-detail.md">Book Detail (FR 3.0 / 4.0)</a></li>
                     <li style="padding-left: 15px"><a href="../shared/notification-center.md">Notification Center (FR 2.1 / 8.0)</a></li>
                 </ul>
-            </td>
+            </d>
             <td valign="top" style="border: 1px solid #e0e0e0; padding: 20px;">
                 <div style="margin-bottom: 15px; font-size: 0.85em; color: #666;">
                     <a href="." style="text-decoration: none;">Librarian Management Portal</a> &gt; 
-                    <a href="overdue-notifier.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Overdue Notifier</a>
+                    <a href="admin-settings.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Admin Settings</a>
                 </div>           
                 <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
-                    <img src="../../assets/overdue_and_fines.png" alt="Overdue Notifier Screenshot" style="max-width: 100%;">
+                    <img src="../../assets/admin_settings.png" alt="Admin Settings Screenshot" style="max-width: 100%;">
                 </div>
-                <h2 style="margin-top: 0;">Overdue Notifier (FR 8.0)</h2>
-                <p>The Overdue Notifier feature automatically tracks borrowed books and sends notifications to students when their borrowed books are approaching the due date or are already overdue. This helps students return books on time and avoid unnecessary fines.</p>
-                <p>Librarians can configure notification schedules, view overdue reports, and manage fine calculations. The system sends automated reminders at specified intervals (e.g., 3 days before due date, day of due date, and daily after overdue). Notifications are sent via in-app alerts and email.</p>
+                <h2 style="margin-top: 0;">Admin Settings</h2>
+                <p>The Admin Settings feature allows librarians and administrators to configure global system preferences, library operation rules, and circulation defaults. This includes setting pickup windows, loan durations, fine rates, and notification preferences for the entire library system.</p>
+                <p>These settings apply to all users and library operations, ensuring consistent policies across the institution.</p>
+                <h3>Workspace Controls - Library Admin Preferences</h3>
+                <h4>📦 Pickup Window</h4>
+                <p>Sets the time limit for students to pick up their reserved books before the reservation automatically expires. If a student does not claim the book within this window, the reservation is cancelled and the book becomes available for other students.</p>
+                <p><strong>Default setting:</strong> 48 hours before auto-expiration</p>
+                <h4>⏱️ Loan Duration</h4>
+                <p>Defines the standard borrowing period for books checked out by students. The system automatically calculates the due date based on this setting and sends reminders as the due date approaches.</p>
+                <p><strong>Default setting:</strong> 7 days before due date</p>
+                <h4>💰 Fine Rate</h4>
+                <p>Sets the penalty amount charged per day when a student returns a book after the due date. The system automatically calculates fines based on this rate and the number of overdue days.</p>
+                <p><strong>Default setting:</strong> 50 pesos per overdue day</p>
                 <h3>Use Case Scenario</h3>
                 <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-size: 0.9em; border: 1px solid #ddd;">
                     <tr>
                         <th width="20%" align="left">Actor(s)</th>
-                        <td>Librarian, Student, System Notification Service</d>
+                        <td>Librarian / Administrator</d>
                     </tr>
                     <tr>
                         <th align="left">Goal</th>
-                        <td>To automatically notify students of upcoming or overdue book returns and manage fine calculations.</d>
+                        <td>To configure global library policies including pickup window, loan duration, and fine rates.</d>
                     </tr>
                     <tr>
                         <th align="left">Preconditions</th>
-                        <td>1. Student has borrowed a book with a due date.<br>2. Librarian has configured notification settings.</d>
+                        <td>1. User is logged in with Administrator privileges.<br>2. User has permission to modify system settings.</d>
                     </tr>
                     <tr>
                         <th align="left">Main Scenario</th>
-                        <td>1. System checks due dates daily.<br>2. For books approaching due date (e.g., 3 days left), system sends reminder notification to student.<br>3. On due date, system sends final reminder.<br>4. If book becomes overdue, system calculates fines and sends overdue notification.<br>5. Librarian can view overdue report and manage fines.<br>6. System continues sending daily reminders until book is returned.</d>
+                        <td>1. Administrator navigates to Admin Settings page.<br>2. System displays current configuration values.<br>3. Administrator modifies Pickup Window, Loan Duration, or Fine Rate.<br>4. System validates the input values.<br>5. Administrator saves the changes.<br>6. System applies new settings to all future library transactions.<br>7. System confirms the settings have been updated.</d>
+                    </tr>
+                    <tr>
+                        <th align="left">Alternative Flow</th>
+                        <td>If invalid values are entered (e.g., negative numbers), the system displays an error message and reverts to previous valid settings.</d>
                     </tr>
                     <tr>
                         <th align="left">Outcome</th>
-                        <td>Students receive timely reminders about due dates. Overdue fines are calculated automatically. Librarians can track overdue books efficiently.</d>
+                        <td>Global library policies are updated. All future reservations, checkouts, and fine calculations use the new settings.</d>
                     </tr>
                 </table>
+                <h3>Quick Actions</h3>
+                <ul>
+                    <li>📋 Export Reports - Generate system configuration reports</li>
+                </ul>
             </d>
         </tr>
         <tr>
             <td colspan="2" align="center" style="padding-top: 30px; font-size: 0.8em; color: #999;">
                 <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 10px;">
-                 © 2026 Enera  | BookItStudent
+                   © 2026 Enera  | BookItStudent
             </d>
         </tr>
     </table>

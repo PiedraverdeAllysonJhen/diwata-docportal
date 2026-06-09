@@ -23,6 +23,7 @@
                     <li style="padding-left: 15px"><a href="docs/student/availability.md">Real-Time Availability (FR 4.0)</a></li>
                     <li style="padding-left: 15px"><a href="docs/student/borrowing-history.md">Borrowing History (FR 5.0)</a></li>
                     <li style="padding-left: 15px"><a href="docs/student/book-categories.md">Book Categories (FR 6.0)</a></li>
+                    <li style="padding-left: 15px"><a href="docs/student/account-settings.md">Account Settings (FR 1.0)</a></li>
                 </ul>
                 <p><strong>3. Librarian Management Portal</strong></p>
                 <ul style="list-style-type: none; padding-left: 0; font-size: 0.9em;">
@@ -34,7 +35,6 @@
                 </ul>
                 <p><strong>4. Shared</strong></p>
                 <ul style="list-style-type: none; padding-left: 0; font-size: 0.9em;">
-                    <li style="padding-left: 15px"><a href="docs/shared/account-settings.md">Account Settings (FR 1.0)</a></li>
                     <li style="padding-left: 15px"><a href="docs/shared/book-detail.md">Book Detail (FR 3.0 / 4.0)</a></li>
                     <li style="padding-left: 15px"><a href="docs/shared/notification-center.md">Notification Center (FR 2.1 / 8.0)</a></li>
                 </ul>
