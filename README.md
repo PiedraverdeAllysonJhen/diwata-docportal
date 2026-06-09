@@ -3,13 +3,13 @@
         <tr>
             <td colspan="2" style="padding-bottom: 20px;">
                 <h1 style="margin: 0;">DigitalWare Library System</h1>
-                <p style="font-weight: lighter; margin: 0;">Target: DW010.001</p>
+                <p style="font-weight: lighter; margin: 0;">Target: `DW.010.001`</p>
             </td>
         </tr>
         <tr>
             <td width="25%" valign="top" style="border: 1px solid #e0e0e0; border-right: none;">
-                <h2 style="margin-top: 0;">Site Map</h2>
-                <a href="README.md">Homepage</a>                   
+                <h2 style="margin-top: 0;">Site Map</h2>   
+                <a href="README.md">Homepage</a>                                     
                 <p><strong>1. Authentication & Identity</strong></p>
                 <ul style="list-style-type: none; padding-left: 0; font-size: 0.9em;">
                     <li style="padding-left: 15px"> <a href="docs/auth/authentication-sign-up.md"> Login with Google (FR 1.0) </a></li>
@@ -39,47 +39,52 @@
                     <li style="padding-left: 15px"><a href="docs/shared/notification-center.md">Notification Center (FR 2.1 / 8.0)</a></li>
                 </ul>
             </td>
-            <td valign="top" style="border: 1px solid #e0e0e0; padding: 20px;">
-                <div style="margin-bottom: 15px; font-size: 0.85em; color: #666;">
-                    <a href="docs/auth/" style="text-decoration: none;">Authentication</a> &gt; 
-                    <a href="docs/auth/authentication-sign-up.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Log in</a>
-                </div>           
-                <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
-                    <img src="assets/book_it_Landing_Page.png" alt="Login Screenshot" style="max-width: 100%;">
+            <td valign="top" style="border: 1px solid #e0e0e0; padding: 20px; ">
+                <div>
+                    <table border="1" style="width: 100%; border-collapse: collapse; font-size: 0.9em; text-align: left; margin: 0 auto;">
+                        <thead>
+                            <tr>
+                                <th style="padding: 8px;">Revision Date</th>
+                                <th style="padding: 8px;">Document Version</th>
+                                <th style="padding: 8px;">Description</th>
+                                <th style="padding: 8px;">Approved By</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 8px;">2026-02-13</td>
+                                <td style="padding: 8px;"><code>DW.010.000</code><br>v1.0.0</td>
+                                <td style="padding: 8px;">Updated Site Map to align with FR/UR Mapping and Use Case Diagram</td>
+                                <td style="padding: 8px;">Piedraverde, Allyson Jhen S.<br>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;">2026-02-27</td>
+                                <td style="padding: 8px;"><code>DW.010.001</code><br>v1.1.0</td>
+                                <td style="padding: 8px;">Initialized GitHub repository structure. Added initial README and project documentation scaffold.</td>
+                                <td style="padding: 8px;">Piedraverde, Allyson Jhen S.<br>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;">2026-03-05</td>
+                                <td style="padding: 8px;"><code>DW.010.002</code><br>v1.2.0</td>
+                                <td style="padding: 8px;">Added project structure, Supabase authentication, protected dashboard flow, database migration with RLS policies, and Vercel deployment configuration.</td>
+                                <td style="padding: 8px;">Piedraverde, Allyson Jhen S.<br>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;">2026-04-04</td>
+                                <td style="padding: 8px;"><code>DW.010.003</code><br>v1.3.0</td>
+                                <td style="padding: 8px;">Fixed reservation status mismatches, streamlined feedback flow, fixed settings persistence, and polished Favorites, Book Details, and Settings pages.</td>
+                                <td style="padding: 8px;">Piedraverde, Allyson Jhen S.<br>Project Manager</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <h2 style="margin-top: 0;">Account Creation (FR 1.0)</h2>
-                <p>The Login with Google feature enables students and librarians to securely access BookItStudent using their VSU institutional Google account (@vsu.edu.ph). It eliminates the need for manual registration and password management by leveraging Google OAuth. Upon first login, the system automatically creates a linked account and assigns the appropriate role.</p>
-                <p>This feature improves accessibility and security by providing a fast, reliable, and institution-controlled sign-in process. It automatically retrieves basic user information such as name and email and creates or links a user account within the system for seamless access to library services.</p>
-                <h3>Use Case Scenario</h3>
-                <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-size: 0.9em; border: 1px solid #ddd;">
-                    <tr>
-                        <th width="20%" align="left">Actor(s)</th>
-                        <td>Student, Librarian, Google Authentication Service</d>
-                    </tr>
-                    <tr>
-                        <th align="left">Goal</th>
-                        <td>To securely authenticate and access the BookItStudent system using a VSU Google account without manual registration.</d>
-                    </tr>
-                    <tr>
-                        <th align="left">Preconditions</th>
-                        <td>1. User has a valid VSU Google account (@vsu.edu.ph).<br>2. User has internet connectivity.<br>3. Google OAuth service is available.</d>
-                    </tr>
-                    <tr>
-                        <th align="left">Main Scenario</th>
-                        <td>1. User clicks the "Login" button on the homepage.<br>2. System redirects the user to the login page.<br>3. User clicks "Continue with Google" and enters their VSU Google account credentials.<br>4. Google verifies the account and sends authentication data to the system.<br>5. System validates that the email domain is @vsu.edu.ph.<br>6. System creates or links a user account and assigns a role.<br>7. System grants access and redirects the user to the dashboard.</d>
-                    </tr>
-                    <tr>
-                        <th align="left">Outcome</th>
-                        <td>User is authenticated and redirected to their role-appropriate dashboard. A user account is created in the system if it did not previously exist.</d>
-                    </tr>
-                </table>
-            </d>
+            </td>
         </tr>
         <tr>
             <td colspan="2" align="center" style="padding-top: 30px; font-size: 0.8em; color: #999;">
                 <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 10px;">
-                © 2026 DigitalWare | OnTrack VSU SSC
-            </d>
+                © 2026 BookItStudent | VSU Library System
+            </td>
         </tr>
     </table>
 </div>

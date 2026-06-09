@@ -47,6 +47,9 @@
                 <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
                     <img src="../../assets/book_it_Landing_Page.png" alt="Login Screenshot" style="max-width: 100%;">
                 </div>
+                <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
+                    <img src="../../assets/log_in.png" alt="Login Screenshot" style="max-width: 100%;">
+                </div>
                 <h2 style="margin-top: 0;">Account Creation (FR 1.0)</h2>
                 <p>The Login with Google feature enables students and librarians to securely access BookItStudent using their VSU institutional Google account (@vsu.edu.ph). It eliminates the need for manual registration and password management by leveraging Google OAuth. Upon first login, the system automatically creates a linked account and assigns the appropriate role.</p>
                 <p>This feature improves accessibility and security by providing a fast, reliable, and institution-controlled sign-in process. It automatically retrieves basic user information such as name and email and creates or links a user account within the system for seamless access to library services.</p>

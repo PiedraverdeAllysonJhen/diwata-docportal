@@ -47,6 +47,9 @@
                 <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
                     <img src="../../assets/reserve_book.png" alt="Reserve Book Screenshot" style="max-width: 100%;">
                 </div>
+                  <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
+                    <img src="../../assets/reserve_book_complete.png" alt="Reserve Book Screenshot" style="max-width: 100%;">
+                </div>
                 <h2 style="margin-top: 0;">Reserve Book (FR 2.0)</h2>
                 <p>The Reserve Book feature allows authenticated students to place a reservation on a book that is available in the VSU library. Once a reservation is made, the system records the request and notifies the student of any status updates. Students can view and manage their active reservations from their dashboard or borrowing history.</p>
                 <p><strong>Note:</strong> The reservation will not immediately update the book availability status in the main search or book list. However, the reserved time slot can be seen in the book calendar view.</p>
