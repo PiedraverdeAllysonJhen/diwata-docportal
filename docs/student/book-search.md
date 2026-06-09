@@ -41,36 +41,36 @@
             </td>
             <td valign="top" style="border: 1px solid #e0e0e0; padding: 20px;">
                 <div style="margin-bottom: 15px; font-size: 0.85em; color: #666;">
-                    <a href="docs/auth/" style="text-decoration: none;">Authentication</a> &gt; 
-                    <a href="docs/auth/authentication-sign-up.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Log in</a>
+                    <a href="docs/student/" style="text-decoration: none;">Student Viewer Hub</a> &gt; 
+                    <a href="docs/student/book-search.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Book Search</a>
                 </div>           
                 <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
-                 <img src="../../assets/book_it_Landing_Page.png" alt="Login Screenshot" style="max-width: 100%;">
+                    <img src="../../assets/book_search.png" alt="Book Search Screenshot" style="max-width: 100%;">
                 </div>
-                <h2 style="margin-top: 0;">Account Creation (FR 1.0)</h2>
-                <p>The Login with Google feature enables students and librarians to securely access BookItStudent using their VSU institutional Google account (@vsu.edu.ph). It eliminates the need for manual registration and password management by leveraging Google OAuth. Upon first login, the system automatically creates a linked account and assigns the appropriate role.</p>
-                <p>This feature improves accessibility and security by providing a fast, reliable, and institution-controlled sign-in process. It automatically retrieves basic user information such as name and email and creates or links a user account within the system for seamless access to library services.</p>
+                <h2 style="margin-top: 0;">Book Search (FR 3.0)</h2>
+                <p>The Book Search feature allows students to search for books in the VSU library catalog using various criteria such as title, author, ISBN, or keywords. The search functionality provides quick and accurate results, helping students find the books they need efficiently.</p>
+                <p>Students can apply filters to narrow down search results by category, publication year, or availability status. Search results display key information including book title, author, availability, and location within the library.</p>
                 <h3>Use Case Scenario</h3>
                 <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-size: 0.9em; border: 1px solid #ddd;">
                     <tr>
                         <th width="20%" align="left">Actor(s)</th>
-                        <td>Student, Librarian, Google Authentication Service</d>
+                        <td>Student</d>
                     </tr>
                     <tr>
                         <th align="left">Goal</th>
-                        <td>To securely authenticate and access the BookItStudent system using a VSU Google account without manual registration.</d>
+                        <td>To find specific books in the library catalog using search criteria and filters.</d>
                     </tr>
                     <tr>
                         <th align="left">Preconditions</th>
-                        <td>1. User has a valid VSU Google account (@vsu.edu.ph).<br>2. User has internet connectivity.<br>3. Google OAuth service is available.</d>
+                        <td>1. Student is logged into the system.<br>2. The library catalog database is populated with book records.</d>
                     </tr>
                     <tr>
                         <th align="left">Main Scenario</th>
-                        <td>1. User clicks the "Login" button on the homepage.<br>2. System redirects the user to the login page.<br>3. User clicks "Continue with Google" and enters their VSU Google account credentials.<br>4. Google verifies the account and sends authentication data to the system.<br>5. System validates that the email domain is @vsu.edu.ph.<br>6. System creates or links a user account and assigns a role.<br>7. System grants access and redirects the user to the dashboard.</d>
+                        <td>1. Student navigates to the Book Search page.<br>2. Student enters search keywords (title, author, ISBN, or general keywords).<br>3. System displays matching results in real-time or after submission.<br>4. Student applies filters (category, year, availability) to refine results.<br>5. Student clicks on a book to view detailed information.</d>
                     </tr>
                     <tr>
                         <th align="left">Outcome</th>
-                        <td>User is authenticated and redirected to their role-appropriate dashboard. A user account is created in the system if it did not previously exist.</d>
+                        <td>Student finds desired book(s) and can view detailed information or proceed to reservation.</d>
                     </tr>
                 </table>
             </d>
@@ -83,5 +83,3 @@
         </tr>
     </table>
 </div>
-
-[def]: ./../assets/book_it_Landing_Page.pn

@@ -41,36 +41,40 @@
             </td>
             <td valign="top" style="border: 1px solid #e0e0e0; padding: 20px;">
                 <div style="margin-bottom: 15px; font-size: 0.85em; color: #666;">
-                    <a href="docs/auth/" style="text-decoration: none;">Authentication</a> &gt; 
-                    <a href="docs/auth/authentication-sign-up.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Log in</a>
+                    <a href="docs/student/" style="text-decoration: none;">Student Viewer Hub</a> &gt; 
+                    <a href="docs/student/reservation-notifier.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Reservation Notifier</a>
                 </div>           
                 <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
-                 <img src="../../assets/book_it_Landing_Page.png" alt="Login Screenshot" style="max-width: 100%;">
+                    <img src="../../assets/reservation_notifier.png" alt="Reservation Notifier Screenshot" style="max-width: 100%;">
                 </div>
-                <h2 style="margin-top: 0;">Account Creation (FR 1.0)</h2>
-                <p>The Login with Google feature enables students and librarians to securely access BookItStudent using their VSU institutional Google account (@vsu.edu.ph). It eliminates the need for manual registration and password management by leveraging Google OAuth. Upon first login, the system automatically creates a linked account and assigns the appropriate role.</p>
-                <p>This feature improves accessibility and security by providing a fast, reliable, and institution-controlled sign-in process. It automatically retrieves basic user information such as name and email and creates or links a user account within the system for seamless access to library services.</p>
+                <h2 style="margin-top: 0;">Reservation Notifier (FR 2.1)</h2>
+                <p>The Reservation Notifier feature automatically sends real-time notifications to students regarding the status of their book reservations. Students receive alerts when their reservation is confirmed, ready for pickup, or if there are any changes or cancellations. This feature ensures that students stay informed about their library requests without needing to manually check the system.</p>
+                <p>Notifications can be received through multiple channels including in-app notifications, email, or push notifications depending on system configuration and user preferences. The notifier integrates with the dashboard and notification center to provide a centralized view of all reservation-related updates.</p>
                 <h3>Use Case Scenario</h3>
                 <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-size: 0.9em; border: 1px solid #ddd;">
                     <tr>
                         <th width="20%" align="left">Actor(s)</th>
-                        <td>Student, Librarian, Google Authentication Service</d>
+                        <td>Student, System Notification Service</d>
                     </tr>
                     <tr>
                         <th align="left">Goal</th>
-                        <td>To securely authenticate and access the BookItStudent system using a VSU Google account without manual registration.</d>
+                        <td>To receive automatic real-time updates about book reservation status without manual checking.</d>
                     </tr>
                     <tr>
                         <th align="left">Preconditions</th>
-                        <td>1. User has a valid VSU Google account (@vsu.edu.ph).<br>2. User has internet connectivity.<br>3. Google OAuth service is available.</d>
+                        <td>1. Student is logged in and has an active account.<br>2. Student has made a book reservation.<br>3. Notification preferences are configured (if applicable).</d>
                     </tr>
                     <tr>
                         <th align="left">Main Scenario</th>
-                        <td>1. User clicks the "Login" button on the homepage.<br>2. System redirects the user to the login page.<br>3. User clicks "Continue with Google" and enters their VSU Google account credentials.<br>4. Google verifies the account and sends authentication data to the system.<br>5. System validates that the email domain is @vsu.edu.ph.<br>6. System creates or links a user account and assigns a role.<br>7. System grants access and redirects the user to the dashboard.</d>
+                        <td>1. Student makes a reservation for a book.<br>2. System automatically sends a confirmation notification to the student.<br>3. Librarian updates the reservation status (e.g., ready for pickup, approved, cancelled).<br>4. System triggers a real-time notification to the student.<br>5. Student receives the notification on their dashboard and selected channels.<br>6. Student clicks the notification to view reservation details.</d>
+                    </tr>
+                    <tr>
+                        <th align="left">Alternative Flow</th>
+                        <td>If a reservation is cancelled or delayed, the system sends an immediate notification explaining the reason and suggesting alternative actions.</d>
                     </tr>
                     <tr>
                         <th align="left">Outcome</th>
-                        <td>User is authenticated and redirected to their role-appropriate dashboard. A user account is created in the system if it did not previously exist.</d>
+                        <td>Student receives timely updates about their reservation status and can take appropriate action (e.g., picking up a ready book or adjusting a cancelled reservation).</d>
                     </tr>
                 </table>
             </d>
@@ -83,5 +87,3 @@
         </tr>
     </table>
 </div>
-
-[def]: ./../assets/book_it_Landing_Page.pn

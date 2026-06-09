@@ -12,7 +12,7 @@
                 <a href="/">Homepage</a>                                     
                 <p><strong>1.Authentication & Identity</strong></p>
                 <ul style="list-style-type: none; padding-left: 0; font-size: 0.9em;">
-                    <li style="padding-left: 15px"> <a href="docs/auth/google-login.md"> Login with Google (FR 1.0) </a></li>
+                    <li style="padding-left: 15px"> <a href="docs/auth/authentication-sign-up.md"> Login with Google (FR 1.0) </a></li>
                 </ul>
                 <p><strong>2. Student Viewer Hub</strong></p>
                 <ul style="list-style-type: none; padding-left: 0; font-size: 0.9em;">
@@ -55,6 +55,24 @@
                                 <td style="padding: 8px;">2026-02-13</td>
                                 <td style="padding: 8px;"><code>DW.010.000</code><br>v1.0.0</td>
                                 <td style="padding: 8px;">Updated Site Map to align with FR/UR Mapping and Use Case Diagram</td>
+                                <td style="padding: 8px;">Piedraverde, Allyson Jhen S.<br>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;">2026-02-27</td>
+                                <td style="padding: 8px;"><code>DW.010.001</code><br>v1.1.0</td>
+                                <td style="padding: 8px;">Initialized GitHub repository structure. Added initial README and project documentation scaffold.</td>
+                                <td style="padding: 8px;">Piedraverde, Allyson Jhen S.<br>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;">2026-03-05</td>
+                                <td style="padding: 8px;"><code>DW.010.002</code><br>v1.2.0</td>
+                                <td style="padding: 8px;">Added project structure, Supabase authentication, protected dashboard flow, database migration with RLS policies, and Vercel deployment configuration.</td>
+                                <td style="padding: 8px;">Piedraverde, Allyson Jhen S.<br>Project Manager</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 8px;">2026-04-04</td>
+                                <td style="padding: 8px;"><code>DW.010.003</code><br>v1.3.0</td>
+                                <td style="padding: 8px;">Fixed reservation status mismatches, streamlined feedback flow, fixed settings persistence, and polished Favorites, Book Details, and Settings pages.</td>
                                 <td style="padding: 8px;">Piedraverde, Allyson Jhen S.<br>Project Manager</td>
                             </tr>
                         </tbody>

@@ -41,36 +41,36 @@
             </td>
             <td valign="top" style="border: 1px solid #e0e0e0; padding: 20px;">
                 <div style="margin-bottom: 15px; font-size: 0.85em; color: #666;">
-                    <a href="docs/auth/" style="text-decoration: none;">Authentication</a> &gt; 
-                    <a href="docs/auth/authentication-sign-up.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Log in</a>
+                    <a href="docs/student/" style="text-decoration: none;">Student Viewer Hub</a> &gt; 
+                    <a href="docs/student/book-categories.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Book Categories</a>
                 </div>           
                 <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
-                 <img src="../../assets/book_it_Landing_Page.png" alt="Login Screenshot" style="max-width: 100%;">
+                    <img src="../../assets/book_categories.png" alt="Book Categories Screenshot" style="max-width: 100%;">
                 </div>
-                <h2 style="margin-top: 0;">Account Creation (FR 1.0)</h2>
-                <p>The Login with Google feature enables students and librarians to securely access BookItStudent using their VSU institutional Google account (@vsu.edu.ph). It eliminates the need for manual registration and password management by leveraging Google OAuth. Upon first login, the system automatically creates a linked account and assigns the appropriate role.</p>
-                <p>This feature improves accessibility and security by providing a fast, reliable, and institution-controlled sign-in process. It automatically retrieves basic user information such as name and email and creates or links a user account within the system for seamless access to library services.</p>
+                <h2 style="margin-top: 0;">Book Categories (FR 6.0)</h2>
+                <p>The Book Categories feature organizes the library's collection into logical groups based on genre, subject, or academic discipline. Students can browse books by category to discover new titles or find books related to their interests or field of study.</p>
+                <p>Common categories include Fiction, Non-Fiction, Science, Technology, Engineering, Mathematics, History, Literature, and Reference. Each category displays the number of available books and popular titles within that category, making it easier for students to explore the library collection.</p>
                 <h3>Use Case Scenario</h3>
                 <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-size: 0.9em; border: 1px solid #ddd;">
                     <tr>
                         <th width="20%" align="left">Actor(s)</th>
-                        <td>Student, Librarian, Google Authentication Service</d>
+                        <td>Student</d>
                     </tr>
                     <tr>
                         <th align="left">Goal</th>
-                        <td>To securely authenticate and access the BookItStudent system using a VSU Google account without manual registration.</d>
+                        <td>To browse the library collection by category to find books of interest.</d>
                     </tr>
                     <tr>
                         <th align="left">Preconditions</th>
-                        <td>1. User has a valid VSU Google account (@vsu.edu.ph).<br>2. User has internet connectivity.<br>3. Google OAuth service is available.</d>
+                        <td>1. Student is logged into the system.<br>2. Books in the catalog are organized into categories.</d>
                     </tr>
                     <tr>
                         <th align="left">Main Scenario</th>
-                        <td>1. User clicks the "Login" button on the homepage.<br>2. System redirects the user to the login page.<br>3. User clicks "Continue with Google" and enters their VSU Google account credentials.<br>4. Google verifies the account and sends authentication data to the system.<br>5. System validates that the email domain is @vsu.edu.ph.<br>6. System creates or links a user account and assigns a role.<br>7. System grants access and redirects the user to the dashboard.</d>
+                        <td>1. Student navigates to the Book Categories page.<br>2. System displays a list of available categories with book counts.<br>3. Student selects a category (e.g., Science, Fiction, History).<br>4. System displays all books belonging to that category.<br>5. Student clicks on a book to view details or make a reservation.</d>
                     </tr>
                     <tr>
                         <th align="left">Outcome</th>
-                        <td>User is authenticated and redirected to their role-appropriate dashboard. A user account is created in the system if it did not previously exist.</d>
+                        <td>Student discovers books by category and can explore the library collection more effectively.</d>
                     </tr>
                 </table>
             </d>
@@ -83,5 +83,3 @@
         </tr>
     </table>
 </div>
-
-[def]: ./../assets/book_it_Landing_Page.pn

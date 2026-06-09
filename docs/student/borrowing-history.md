@@ -41,36 +41,36 @@
             </td>
             <td valign="top" style="border: 1px solid #e0e0e0; padding: 20px;">
                 <div style="margin-bottom: 15px; font-size: 0.85em; color: #666;">
-                    <a href="docs/auth/" style="text-decoration: none;">Authentication</a> &gt; 
-                    <a href="docs/auth/authentication-sign-up.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Log in</a>
+                    <a href="docs/student/" style="text-decoration: none;">Student Viewer Hub</a> &gt; 
+                    <a href="docs/student/borrowing-history.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Borrowing History</a>
                 </div>           
                 <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
-                 <img src="../../assets/book_it_Landing_Page.png" alt="Login Screenshot" style="max-width: 100%;">
+                    <img src="../../assets/borrowing_history.png" alt="Borrowing History Screenshot" style="max-width: 100%;">
                 </div>
-                <h2 style="margin-top: 0;">Account Creation (FR 1.0)</h2>
-                <p>The Login with Google feature enables students and librarians to securely access BookItStudent using their VSU institutional Google account (@vsu.edu.ph). It eliminates the need for manual registration and password management by leveraging Google OAuth. Upon first login, the system automatically creates a linked account and assigns the appropriate role.</p>
-                <p>This feature improves accessibility and security by providing a fast, reliable, and institution-controlled sign-in process. It automatically retrieves basic user information such as name and email and creates or links a user account within the system for seamless access to library services.</p>
+                <h2 style="margin-top: 0;">Borrowing History (FR 5.0)</h2>
+                <p>The Borrowing History feature allows students to view a complete record of all books they have borrowed or reserved in the past. This includes currently active borrowings, past borrowings, and reservation history. Students can track their reading activity and revisit books they have previously checked out.</p>
+                <p>The history includes details such as book title, author, borrowing date, return date, and status (returned, overdue, or lost). This feature helps students keep track of their library usage and identify books they may want to borrow again in the future.</p>
                 <h3>Use Case Scenario</h3>
                 <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-size: 0.9em; border: 1px solid #ddd;">
                     <tr>
                         <th width="20%" align="left">Actor(s)</th>
-                        <td>Student, Librarian, Google Authentication Service</d>
+                        <td>Student</d>
                     </tr>
                     <tr>
                         <th align="left">Goal</th>
-                        <td>To securely authenticate and access the BookItStudent system using a VSU Google account without manual registration.</d>
+                        <td>To view past and current borrowing records and track library activity.</d>
                     </tr>
                     <tr>
                         <th align="left">Preconditions</th>
-                        <td>1. User has a valid VSU Google account (@vsu.edu.ph).<br>2. User has internet connectivity.<br>3. Google OAuth service is available.</d>
+                        <td>1. Student is logged into the system.<br>2. Student has borrowed or reserved books in the past.</d>
                     </tr>
                     <tr>
                         <th align="left">Main Scenario</th>
-                        <td>1. User clicks the "Login" button on the homepage.<br>2. System redirects the user to the login page.<br>3. User clicks "Continue with Google" and enters their VSU Google account credentials.<br>4. Google verifies the account and sends authentication data to the system.<br>5. System validates that the email domain is @vsu.edu.ph.<br>6. System creates or links a user account and assigns a role.<br>7. System grants access and redirects the user to the dashboard.</d>
+                        <td>1. Student navigates to the Borrowing History page.<br>2. System displays a list of all past and current borrowings.<br>3. Student can filter history by status (active, returned, overdue).<br>4. Student selects a record to view detailed borrowing information.<br>5. System shows book details, borrowing dates, and return status.</d>
                     </tr>
                     <tr>
                         <th align="left">Outcome</th>
-                        <td>User is authenticated and redirected to their role-appropriate dashboard. A user account is created in the system if it did not previously exist.</d>
+                        <td>Student can review their library activity and identify books they have previously borrowed.</d>
                     </tr>
                 </table>
             </d>
@@ -83,5 +83,3 @@
         </tr>
     </table>
 </div>
-
-[def]: ./../assets/book_it_Landing_Page.pn

@@ -41,36 +41,36 @@
             </td>
             <td valign="top" style="border: 1px solid #e0e0e0; padding: 20px;">
                 <div style="margin-bottom: 15px; font-size: 0.85em; color: #666;">
-                    <a href="docs/auth/" style="text-decoration: none;">Authentication</a> &gt; 
-                    <a href="docs/auth/authentication-sign-up.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Log in</a>
+                    <a href="docs/student/" style="text-decoration: none;">Student Viewer Hub</a> &gt; 
+                    <a href="docs/student/availability.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Real-Time Availability</a>
                 </div>           
                 <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
-                 <img src="../../assets/book_it_Landing_Page.png" alt="Login Screenshot" style="max-width: 100%;">
+                    <img src="../../assets/real_time_availability.png" alt="Real-Time Availability Screenshot" style="max-width: 100%;">
                 </div>
-                <h2 style="margin-top: 0;">Account Creation (FR 1.0)</h2>
-                <p>The Login with Google feature enables students and librarians to securely access BookItStudent using their VSU institutional Google account (@vsu.edu.ph). It eliminates the need for manual registration and password management by leveraging Google OAuth. Upon first login, the system automatically creates a linked account and assigns the appropriate role.</p>
-                <p>This feature improves accessibility and security by providing a fast, reliable, and institution-controlled sign-in process. It automatically retrieves basic user information such as name and email and creates or links a user account within the system for seamless access to library services.</p>
+                <h2 style="margin-top: 0;">Real-Time Availability (FR 4.0)</h2>
+                <p>The Real-Time Availability feature displays the current availability status of books in the VSU library. Students can see whether a book is available for borrowing, reserved, or checked out at any given moment. This feature integrates with the library's inventory system to provide accurate, up-to-date information.</p>
+                <p>Availability information is shown on search results, book detail pages, and the book calendar view. The status updates dynamically as reservations are made or books are checked in/out, helping students make informed decisions about which books to reserve.</p>
                 <h3>Use Case Scenario</h3>
                 <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-size: 0.9em; border: 1px solid #ddd;">
                     <tr>
                         <th width="20%" align="left">Actor(s)</th>
-                        <td>Student, Librarian, Google Authentication Service</d>
+                        <td>Student</d>
                     </tr>
                     <tr>
                         <th align="left">Goal</th>
-                        <td>To securely authenticate and access the BookItStudent system using a VSU Google account without manual registration.</d>
+                        <td>To check the current availability status of a book before attempting to reserve it.</d>
                     </tr>
                     <tr>
                         <th align="left">Preconditions</th>
-                        <td>1. User has a valid VSU Google account (@vsu.edu.ph).<br>2. User has internet connectivity.<br>3. Google OAuth service is available.</d>
+                        <td>1. Student is logged into the system.<br>2. The book record exists in the library catalog.</d>
                     </tr>
                     <tr>
                         <th align="left">Main Scenario</th>
-                        <td>1. User clicks the "Login" button on the homepage.<br>2. System redirects the user to the login page.<br>3. User clicks "Continue with Google" and enters their VSU Google account credentials.<br>4. Google verifies the account and sends authentication data to the system.<br>5. System validates that the email domain is @vsu.edu.ph.<br>6. System creates or links a user account and assigns a role.<br>7. System grants access and redirects the user to the dashboard.</d>
+                        <td>1. Student searches for a book using Book Search.<br>2. System displays search results with availability status (Available, Reserved, Checked Out).<br>3. Student clicks on a book to view the Book Detail page.<br>4. System shows real-time availability and expected return date if checked out.<br>5. Student checks the book calendar to see available time slots for reservation.</d>
                     </tr>
                     <tr>
                         <th align="left">Outcome</th>
-                        <td>User is authenticated and redirected to their role-appropriate dashboard. A user account is created in the system if it did not previously exist.</d>
+                        <td>Student knows whether a book is currently available and can proceed with reservation or check alternative options.</d>
                     </tr>
                 </table>
             </d>
@@ -83,5 +83,3 @@
         </tr>
     </table>
 </div>
-
-[def]: ./../assets/book_it_Landing_Page.pn

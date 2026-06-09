@@ -41,36 +41,36 @@
             </td>
             <td valign="top" style="border: 1px solid #e0e0e0; padding: 20px;">
                 <div style="margin-bottom: 15px; font-size: 0.85em; color: #666;">
-                    <a href="docs/auth/" style="text-decoration: none;">Authentication</a> &gt; 
-                    <a href="docs/auth/authentication-sign-up.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Log in</a>
+                    <a href="docs/shared/" style="text-decoration: none;">Shared</a> &gt; 
+                    <a href="docs/shared/notification-center.md" style="color: #ac9e9e; font-weight: bold; text-decoration: none;">Notification Center</a>
                 </div>           
                 <div style="margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 15px;">
-                 <img src="../../assets/book_it_Landing_Page.png" alt="Login Screenshot" style="max-width: 100%;">
+                    <img src="../../assets/notification_center.png" alt="Notification Center Screenshot" style="max-width: 100%;">
                 </div>
-                <h2 style="margin-top: 0;">Account Creation (FR 1.0)</h2>
-                <p>The Login with Google feature enables students and librarians to securely access BookItStudent using their VSU institutional Google account (@vsu.edu.ph). It eliminates the need for manual registration and password management by leveraging Google OAuth. Upon first login, the system automatically creates a linked account and assigns the appropriate role.</p>
-                <p>This feature improves accessibility and security by providing a fast, reliable, and institution-controlled sign-in process. It automatically retrieves basic user information such as name and email and creates or links a user account within the system for seamless access to library services.</p>
+                <h2 style="margin-top: 0;">Notification Center (FR 2.1 / 8.0)</h2>
+                <p>The Notification Center is a shared component that aggregates all system notifications for both students and librarians. It provides a centralized view of reservation confirmations, status updates, overdue alerts, and other important system messages. Users can access their notification history and manage notification preferences from this interface.</p>
+                <p>Notifications are displayed in real-time with read/unread status indicators. Users can mark notifications as read, archive them, or click through to view related content. The Notification Center integrates with the Reservation Notifier (FR 2.1) for students and Overdue Notifier (FR 8.0) for librarians.</p>
                 <h3>Use Case Scenario</h3>
                 <table border="1" width="100%" cellpadding="8" cellspacing="0" style="border-collapse: collapse; font-size: 0.9em; border: 1px solid #ddd;">
                     <tr>
                         <th width="20%" align="left">Actor(s)</th>
-                        <td>Student, Librarian, Google Authentication Service</d>
+                        <td>Student, Librarian</d>
                     </tr>
                     <tr>
                         <th align="left">Goal</th>
-                        <td>To securely authenticate and access the BookItStudent system using a VSU Google account without manual registration.</d>
+                        <td>To view and manage all system notifications in one centralized location.</d>
                     </tr>
                     <tr>
                         <th align="left">Preconditions</th>
-                        <td>1. User has a valid VSU Google account (@vsu.edu.ph).<br>2. User has internet connectivity.<br>3. Google OAuth service is available.</d>
+                        <td>1. User is logged into the system.<br>2. User has received notifications from system features.</d>
                     </tr>
                     <tr>
                         <th align="left">Main Scenario</th>
-                        <td>1. User clicks the "Login" button on the homepage.<br>2. System redirects the user to the login page.<br>3. User clicks "Continue with Google" and enters their VSU Google account credentials.<br>4. Google verifies the account and sends authentication data to the system.<br>5. System validates that the email domain is @vsu.edu.ph.<br>6. System creates or links a user account and assigns a role.<br>7. System grants access and redirects the user to the dashboard.</d>
+                        <td>1. User clicks the Notification Center icon or navigates to the page.<br>2. System displays a list of all notifications with read/unread status.<br>3. User clicks on a notification to view details.<br>4. System redirects to the relevant page (reservation, book detail, etc.).<br>5. User marks notifications as read or archives them.<br>6. System updates notification status in real-time.</d>
                     </tr>
                     <tr>
                         <th align="left">Outcome</th>
-                        <td>User is authenticated and redirected to their role-appropriate dashboard. A user account is created in the system if it did not previously exist.</d>
+                        <td>User can efficiently manage and respond to all system notifications from a single interface.</d>
                     </tr>
                 </table>
             </d>
@@ -83,5 +83,3 @@
         </tr>
     </table>
 </div>
-
-[def]: ./../assets/book_it_Landing_Page.pn
