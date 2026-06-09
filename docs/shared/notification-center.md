@@ -9,7 +9,7 @@
         <tr>
             <td width="25%" valign="top" style="border: 1px solid #e0e0e0; border-right: none;">
                 <h2 style="margin-top: 0;">Site Map</h2>
-                <a href="README.md">Homepage</a>                   
+                <a href="do">Homepage</a>                   
                 <p><strong>1. Authentication & Identity</strong></p>
                 <ul style="list-style-type: none; padding-left: 0; font-size: 0.9em;">
                     <li style="padding-left: 15px"> <a href="docs/auth/authentication-sign-up.md"> Login with Google (FR 1.0) </a></li>
